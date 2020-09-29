@@ -1,0 +1,17 @@
+{{> nav}}
+
+<div id="edit-container">
+    <h3>Edit your profile</h3>
+
+    <form action="/profiles/edit" method="post">
+        <input type="text" name="first" value="{{user.first}}" placeholder="First Name">
+        <input type="text" name="last" value="{{user.last}}" placeholder="Last Name">
+        <input type="email" name="userEmail" value="{{user.email}}"class="userEmail" placeholder="Email Address">
+        <input type="password" name="userPW" class="userPw" placeholder="Password">
+        <input type="text" name="age" value="{{user.age}}" placeholder="Age (Optional)">
+        <input type="text" name="city" value="{{user.city}}" placeholder="City (Optional)">
+        <input type="url" name="url" value="{{user.url}}" placeholder="Homepage (Optional)">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="submit" value="Submit" id="submit-edit">
+    </form>
+</div>

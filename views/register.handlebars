@@ -1,0 +1,38 @@
+<header>
+    <div class="logo">
+        <h3>Plastic Free World</h3>
+    </div>
+    <nav>
+        <a href="/login">Log in</a> |
+        <a href="/register">Register</a>
+    </nav>
+</header>
+
+<div class="register-container">
+    <h3>Register here</h3>
+    <form action="/register" method="post"> 
+        <div class="input-field">   
+            <input type="text" name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="input-field">
+            <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="input-field">
+            <input class="userEmail" type="email" name="userEmail" placeholder="Email Address" required>
+        </div>
+        <div class="input-field">
+            <input class="userPw" type="password" name="userPw" placeholder="Password" required>
+        </div>
+    
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="input-field"> 
+            <input id="signIn-button" type="submit" value="Sign in">
+        </div>
+    </form>   
+</div>
+
+    <div>
+        {{#if err}}
+        <p>Something went wrong. Please try again.</p>
+        {{/if}}
+    </div>

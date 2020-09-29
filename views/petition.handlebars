@@ -1,0 +1,19 @@
+{{> nav}}
+
+
+
+<div id="petition-container">
+    <h3>Please sign here</h3>
+    <form action="/petition" method="POST">
+        <canvas id="canvas" width="400" height="100"></canvas>
+        <input id="add-Img" type="hidden" name="signature">
+        <input id="haveSigned" type="text" name="haveSigned" required>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input id="clear-button" type="button" name="clearcanvas" value="Clear sign field">
+        <input id="submit-button" type="submit" value="Submit">
+    </form>
+</div>
+    
+
+<script src="./script.js"></script>
+

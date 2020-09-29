@@ -1,0 +1,12 @@
+{{> nav}}
+
+<div id="thankyou-container">
+    <p>Thank you for signing this petition.</p>
+
+    <img src="{{newSign}}" alt="users-signature">
+
+    <form action="/deleteSignature" method="post">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input id="signOff-button" type="submit" value="Sign off">
+    </form>
+</div>

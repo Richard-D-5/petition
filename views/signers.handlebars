@@ -1,0 +1,15 @@
+{{> nav}}
+
+
+<div id="signers-container">
+    <h3>All signers</h3>
+
+    <ul>
+        {{#each signers}}
+            <li>
+                <a href="{{url}}">{{first}} {{last}}</a> {{#if age}} | {{age}} {{/if}} {{#if city}} | <a href="/signers/{{city}}">{{city}}</a> {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
+

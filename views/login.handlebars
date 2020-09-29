@@ -1,0 +1,20 @@
+<header id="login-container">
+    <div class="logo">
+        <h3>Plastic Free World</h3>
+    </div>
+    <form action="/login" method="post">
+    <input class="userEmail"type="email" name="userEmail" placeholder="Email Address" required>
+    <input class="userPw" type="password" name="userPw" placeholder="Password" required>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input id="logIn-button" type="submit" value="log in">
+</form>
+  
+</header>
+
+
+
+<div>
+    {{#if err}}
+    <p>Something went wrong. Please try again.</p>
+    {{/if}}
+</div>
