@@ -29,4 +29,4 @@ This was the first large project I completed at Spiced Academy. It is an online 
 
 ### Preview
 
-! [] (petition.gif)
+![](petition.gif)
