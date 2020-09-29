@@ -27,5 +27,6 @@ This was the first large project I completed at Spiced Academy. It is an online 
 * Users can remove their signature, update their information, or delete their account
 * Access to different pages is controlled by cookies
 
+### Preview
 
-
+! [] (petition.gif)
